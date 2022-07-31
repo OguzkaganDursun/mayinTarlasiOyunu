@@ -259,10 +259,12 @@ public class MineSweeper {
 
                 System.out.print("Sutun Giriniz : ");
                 secilenSutun = scan.nextInt();
+                System.out.println("======================================");
 
             }
             if (mayinTarlasiYerlesim[secilenSatir][secilenSutun] == "*")
             {
+                System.out.println("======================================");
                 System.out.println("Oyunu Kaybettiniz!");
                 ekranaYazdirMayinlar(Arrays.toString(mayinTarlasiYerlesim));
                 oyunCalisiyorMu = false;
@@ -274,6 +276,7 @@ public class MineSweeper {
                 this.oyunTahtasiYaz();
                 if(!this.devamMi())
                 {
+                    System.out.println("======================================");
                     System.out.println("Tebrikler!\nOyunu Kazandiniz !");
                     oyunCalisiyorMu = false;
                 }
